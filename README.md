@@ -1,2 +1,2 @@
-http://Bluer.github.io
+# http://Bluer.github.io
 Online Store
