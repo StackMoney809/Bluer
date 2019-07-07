@@ -1,12 +1,9 @@
- 
-
-
-/*
+ /*
  =================================
 ------------------------------------
 	Titile: Bluer 
 
-	Project: Online Store
+	Project: Online Shopping Store
 
 	Author: Rene Morales
  ------------------------------------ 
@@ -44,7 +41,12 @@
 	clear: both;
 }
 
- /*header- section*/
+
+/*=========================================================*/
+
+/*------------------
+  Header section
+---------------------*/
 
 
 .container {
@@ -52,10 +54,10 @@
  	
  }
 
-.first-row{
- 	background: #e62739;
 
- 	
+.importInfo, .importInfo .col{
+ 	background: #e62739;
+ 	max-width: 100%;	
  }
 
 .top-info p {
@@ -65,38 +67,43 @@
 	text-align: center;
 }
 
-/* website logo section*/
-.second-row{
- 	background: #1d1e22;
- 	padding-bottom: 20px;
 
- }
+/* website logo section*/
+
 .site-logo {
 	font-size: 40px;
 	font-weight: 700;
 	text-align: center;
 	margin-top: 20px; 
+	border-bottom: 1px solid #3d3d3f;
+	padding-bottom: 20px;
 }
 
-/*=========================================================*/
 
  /*nav section*/
 
- .third-row{
+.header-section{
  	background: #1d1e22;
  }
 
  .header-top-left {
  	font-size: 14px;
  	text-transform: uppercase;
- 	border-top: 1px solid #3d3d3f;
  }
 
 
  .main-menu li {
  	float: left;
  	margin: 20px;
+ 	padding: 20px;
  }
+
+ .main-menu li:hover, .user-panel a:hover {
+ 	border-bottom: 0.5px solid  #fff;
+
+ }
+
+
 
 .header-top-right {
  	font-size: 14px;
@@ -105,26 +112,118 @@
 .user-panel {
 	margin: 20px;
 	float: right;
+	padding: 20px;
+	
 
 }
 
 .user-panel a {
 	margin-left: 40px;
 	color: #fff;
+	padding: 20px;
 }
 
-/****************************************************************************/
+/*toggle*/
+
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+.toggle .nav-switch {
+	color: #fff;
+	cursor: pointer;
+}
+
+/*----------------------------*/
+
+@media (max-width: 768px){
+
+
+      nav .main-menu {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black .main-menu {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav .main-menu li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            /*padding: 10px;*/
+            margin: 0;
+            text-align: center;
+      }
+
+      nav .user-panel {
+      	display: none;
+      }
+
+      .toggle {
+            display: block;
+      }
+      .main-menu li:hover, 
+      .user-panel a:hover {
+ 		border-style: none;
+	}
+
+	.hero-text {
+		padding-right: 60%;
+	}
+
+	.fashion-discount h1{
+		font-size: 10px;
+	}
+
+
+	.goldBox{
+		display: none;
+	}
+	
+
+	.remove {
+		display: none;
+	}
+	
+	.goldBox img {
+		width: 53px;
+		height: 210px;
+	}
+
+}
+
+
+/*------------------
+  Header section END
+---------------------*/
+
+
+/*------------------
+  Heero section
+---------------------*/
 
 
 .hero-section {
-	background-image: url('/home/rene/Documents/software Engineer project/project/Bluer Online Store/img/banner.jpg');
+	background-image: url('../img/banner.jpg');
 	background-repeat: no-repeat;
-	width: 100%;
+	background-size: 100% 100%;
+	height: 0 auto;
 	padding-bottom: 100px;
 }
 
 .hero-text{
-	padding-top: 350px;
+	padding-top: 20%;
 }
 
 .hero-text h2{
@@ -155,12 +254,14 @@
 }
 
 
-/**********************************************************************************/
 
-/*flex Center*/
+
+/*------------------
+  Flex Center section
+---------------------*/
 
  .flexCenter {
- 	background-image: url('/home/rene/Documents/software Engineer project/project/Bluer Online Store/img/freestocks-org-182581-unsplash.jpg');
+ 	background-image: url('../img/freestocks-org-182581-unsplash.jpg');
  	background-size: cover;
  	background-position: center;
  	background-repeat: no-repeat;
@@ -209,27 +310,32 @@
 	background: rgba(0, 0, 0, 0.9);
 	padding: 15px 40px;
 	/* top | right | bottom | left */
-	margin: 100px 20px 50px 20px;
+	/*margin: 100px 20px 50px 20px;*/
 	border: 1.5px solid #1763BF;
 	text-transform: uppercase;
 	display: inline;
 }
 
-/*flex Center END*/ 
 
-/*****************************************************************/
+/*------------------
+  flex Center section END
+---------------------*/ 
 
-/*AnotherFlex*/
+
+
+/*------------------
+  Anotherflex section
+---------------------*/ 
 
 .anotherFlex {
-	background: url('https://johnlewis.scene7.com/is/image/JohnLewis/mens-wedding-fashion-1JL-mob-banner-240318?');
+	background: url('../img/mens-wedding-fashion-1JL-mob-banner-240318.jpeg');
 	background-repeat: no-repeat;
 	background-position: center 0.1px;
 	background-size: 100%;
-	padding-bottom: 600px;
-
-
+	padding-bottom: 10%;
 }
+
+
 
 .anotherFlex .container
 {
@@ -238,10 +344,11 @@
 
  .let-shop{
 	padding-top: 32%;
-	float: left;
 	margin-left: 12%;
+	/*margin-left: 200px;*/
 	display: inline-block;
 }
+
 
 .shopNow{
 	padding: 15px 40px;
@@ -251,6 +358,9 @@
 	color: #000;
 	
 }
+
+
+
 
 /*------------------------------*/
 
@@ -271,48 +381,56 @@
 
 }
 
-/*AnotherFlex END*/
 
-/******************************************************************/
+/*------------------
+  AnotherFlex section END
+---------------------*/ 
 
-/*Fashion-section*/
+
+/*------------------
+Fashion-section
+--------------------
+*/
 
 
 .left-img {
 
-	background-image: url('/home/rene/Documents/software Engineer project/project/Bluer Online Store/img/abdi-lopez-627040-unsplash.jpg');
+	background-image: url('../img/abdi-lopez-627040-unsplash.jpg');
 
 }
 
 .right-img{
-	background-image: url('/home/rene/Documents/software Engineer project/project/Bluer Online Store/img/afa-ah-loo-487383-unsplash.jpg');
+	background-image: url('../img/afa-ah-loo-487383-unsplash.jpg');
 
 }
 
 .left-img, .right-img {
 	background-repeat: no-repeat;
-	padding-bottom: 600px;
-	background-size: 100%;
+	padding-bottom: 40%;
+	background-size: 100% 100%;
 }
 
 /*--------------------*/
 
 .fashion-discount {
- margin-top: 50%;
- margin-left: 20%;
+ margin-top: 30%;
+ margin-left: 10%;
 }
 
 .fashion-discount p {
 	font-size: 10px;
 	background: rgba(0, 0, 0, 0.9);
 	padding: 10px 0;
-	width: 150px;
-	/* top | right | bottom | left */
-	margin-left: 15%;
-	border: 1.5px solid #1763BF;
+	/*width: 300px;*/
+	/*width: 70%;*/
+	 /*top | right | bottom | left */
+	/*margin-left: 15%;*/
+	margin: 10px;
+	border: 2px solid #1763BF;
 	text-transform: uppercase;
 	color: #1763BF;
 	text-align: center;
+	margin-right: 10%;
 }
 
 
@@ -323,29 +441,29 @@
 }
 
 .fashion-discount h1 {
-	font-size: 60px;
-	margin-right: 30%;
+	font-size: 3.75em;
+	/*margin-right: 30%;*/
+	padding-top: 5%;
 }
 
+
 .fashion-discount h2{
-	font-size: 30px;
-	margin-right: 30%;
+	font-size: 1.875em;	
+	/*margin-right: 30%;*/
+	padding-top: 10%;
 }
 
 .fashion-discount h3 {
 	font-size: 14px;
-	margin-left: 20%;
+	margin-left: 35%;
+	padding-top: 5%;
 	text-transform: uppercase;
 }
 
 
-
-
-
-/**************************************************************************/
-
-
-/*goldBox*/
+/*-----------------
+goldBox Section
+-------------------*/
 
 .goldBox{
 	border-top: 1px solid #000;
@@ -375,9 +493,11 @@
 	width: 200px;
 }
 
-.goldBox i {
+/* left and right ARROW*/
+
+.goldBox .leftArrow, .goldBox .rightArrow {
+	padding-top: 150px;
 	font-size: 30px;
-	margin-top: 70%;
 	color: rgba(0, 0, 0, 0.8);
 }
 
@@ -391,6 +511,8 @@
 	margin-left: 20%;
 }
 
+/*--------------------------*/
+
 .dressInfo {
 	padding-top: 20px;
 	font-family: 'Lora';
@@ -401,6 +523,24 @@
 	text-align: center;
 	text-transform: uppercase;
 }
+
+/*----------*/
+
+.rating {
+	text-align: center;
+}
+
+.rating i {
+	color: #ffca04;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+
+/*-----------*/
+
+
+
 
 .add-button {
 	text-align: center;
@@ -416,10 +556,13 @@
 	text-transform: capitalize;
 }
 
-/*goldBox END*/
+/*---------------
+goldBox Section END
+-----------------*/
 
-/*=================================================================*/
-
+/*------------------
+Footer Section
+-------------------*/
 .footer-section {
 	background-color: #000;
 	color: white;
@@ -531,10 +674,21 @@
 	cursor: pointer;
 }
 
+/*------------------
+Footer Section END
+-------------------*/
+
 
 /*============================================================================*/
 
-/*clothing-section*/
+/*-----------------------------
+Men, women, shoes and accesories 
+Pages
+--------------------------------*/
+
+/*------------------
+clothing-section
+--------------------*/
 
 	.wearing-section{
 		/*padding-bottom: 50px;*/
@@ -551,8 +705,9 @@
 		padding-bottom: 20%;
 	}
 
-/*clothing-section END */
-/*=====================================*/
+/*-------------------
+clothing-section END 
+---------------------*/
 
 .line-though {
 	text-decoration: line-through black;
@@ -569,7 +724,9 @@
 
 /*-----------------------------------------------------*/
 
-/* clothing IMG*/
+/*----------------
+ clothing IMG
+ -----------------*/
 
 .clothes-img {
 	padding-top: 100px;
@@ -621,16 +778,22 @@
 }
 
 
-/* clothing IMG END*/
+/*------------------
+ clothing IMG END
+ -------------------*/
 
-/*pagination-section*/
+
+
+/*-------------------
+pagination-section
+---------------------*/
 
 .pagination-section{
 	padding-bottom: 100px;
 }
 
 
-.site-pagination {
+.site-pagination{
 	text-align: center;
 }
 
@@ -663,4 +826,33 @@
 }
 
 
-/*pagination-section END*/
+/*---------------------
+pagination-section END
+-----------------------*/
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
