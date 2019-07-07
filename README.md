@@ -1,4 +1,4 @@
-# http://Bluer.github.io
+# https://renemorales.github.io/Bluer/
 Online Store
 
 # Under Construction
